@@ -3,7 +3,6 @@ import styled  from 'styled-components'
 import Lamp from './Lamp.jsx';
 import LightSwitch from './LightSwitch.jsx';
 import { useState } from 'react';
-import banana from 'react';
 
 const Room = styled.div`
   position: relative;
@@ -16,8 +15,6 @@ const Room = styled.div`
 
 
 function App() { 
-  console.log(useState);
-  console.log(banana);
   const [isLampOneOn, setIsLampOneOn] = useState(false);
   const [isLampTwoOn, setIsLampTwoOn] = useState(false);
 
