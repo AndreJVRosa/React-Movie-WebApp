@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-
-//config
-import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL} from '../config.jsx';
-
-//Components
-
-//Hook
-
-=======
 import React from "react";
 
 //Api
@@ -27,22 +16,11 @@ import Button from "./Button";
 
 //Hook
 import { useHomeFetch } from '../hooks/useHomeFetch'
->>>>>>> main
 //Image
 import NoImage from '../assets/no_image.jpg'
 
 
 const Home = () => {
-<<<<<<< HEAD
-   const [state, setState] = useState();
-   const [loading, setLoading] = useState(false);
-   const [error, setError] = useState(false);
-
-    return <div>Home Page</div>
-}
-
-export default Home
-=======
    
     const { state, loading, error, searchTerm ,setSearchTerm, setIsLoadingMore } = useHomeFetch();
 
@@ -84,4 +62,3 @@ export default Home
 };
 
 export default Home;
->>>>>>> main
