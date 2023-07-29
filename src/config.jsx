@@ -2,7 +2,11 @@
 // Read more about the API here: https://developers.themoviedb.org/
 
 const API_URL = 'https://api.themoviedb.org/3/';
+<<<<<<< HEAD:src/config.jsx
 const API_KEY = '022ca562c05575baf73c212c4f0eab32';
+=======
+const API_KEY = import.meta.env.VITE_API_KEY;
+>>>>>>> main:src/config.js
 
 const SEARCH_BASE_URL = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=`;
 const POPULAR_BASE_URL = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US`;
