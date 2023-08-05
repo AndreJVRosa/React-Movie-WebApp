@@ -46,11 +46,12 @@ export const useHomeFetch = () => {
         const sessionState = isPersistedState('homeState');
 
         if (sessionState){
+            console.log('grabbing from session');
             setState(sessionState);
             return;
-        };
-    };
-
+        }
+    }
+    console.log('test')
     setState(initialState);
     fetchMovies(1, searchTerm);
    }, [searchTerm]);
